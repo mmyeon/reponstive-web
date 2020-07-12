@@ -18,6 +18,18 @@
     <script src="js/jquery.min.js"></script>
     <style>
       /* 모바일용 CSS */
+      /* 기본 CSS */
+      #wrap {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1200px;
+      }
+
+      #wrap section {
+        box-sizing: border-box;
+      }
 
       /* 인포메이션 영역 CSS */
       .info_section {
@@ -42,34 +54,22 @@
         padding: 0.938rem 0;
       }
 
-      /* 기본 CSS */
-      #wrap {
-        display: flex;
-        flex-flow: column nowrap;
-        width: 80%;
-        margin: 0 auto;
-        max-width: 1200px;
-      }
-
-      #wrap section {
-        box-sizing: border-box;
-      }
-
       /* 태블릿용 CSS */
       @media all and (min-width: 768px) {
+        /* 기본 CSS */
+        #wrap {
+          width: 80%;
+          flex-flow: row wrap;
+        }
       }
-      /* 기본 CSS */
-      #wrap {
-        width: 80%;
-        flex-flow: row wrap;
-      }
+
       /* PC용 CSS */
-      /* 기본 CSS */
       @media all and (min-width: 960px) {
-      }
-      #wrap {
-        width: 80%;
-        position: relative;
+        /* 기본 CSS */
+        #wrap {
+          width: 80%;
+          position: relative;
+        }
       }
     </style>
   </head>
